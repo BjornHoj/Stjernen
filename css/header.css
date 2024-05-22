@@ -22,10 +22,13 @@
     justify-content: space-between;
     background-color: #d7bf4c;
     color: #030303;
-    height: 50px;
+    height: 80px;
 
   }
   
+  p{
+   
+  }
   .menu {
     display: flex;
     flex-direction: row;
