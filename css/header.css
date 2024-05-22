@@ -15,16 +15,15 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
   }
-  header {
+  .headercontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: #d7bf4c;
-  
     color: #030303;
     height: 50px;
-    padding: 1em;
+
   }
   
   .menu {
