@@ -1,0 +1,7 @@
+html{
+    --primary: rgb(205, 181, 53);
+}
+
+body{
+    background-color: var(--primary);
+}

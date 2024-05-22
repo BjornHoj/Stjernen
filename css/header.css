@@ -20,15 +20,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #d7bf4c;
+    background-color: rgb(205, 181, 53);
     color: #030303;
     height: 80px;
 
   }
   
-  p{
-   
-  }
+.Aabningstider{
+  padding-left: 1em;
+}
   .menu {
     display: flex;
     flex-direction: row;
