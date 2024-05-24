@@ -1,7 +1,12 @@
-html{
-    --primary: rgb(205, 181, 53);
+html {
+  --primary: rgb(205, 181, 53);
 }
 
-body{
-    background-color: var(--primary);
+body {
+  background-color: var(--primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stjerne_logo {
+  max-width: 100%;
 }
