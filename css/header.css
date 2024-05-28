@@ -14,15 +14,9 @@ body {
   position: relative; /* Gør det muligt at absolut positionere child-elementer */
 }
 
-.opening-hours {
-  flex: 1; /* Giver elementet mulighed for at vokse og fylde ledig plads */
-  white-space: nowrap; /* Forhindrer linjeskift inden for elementet */
-}
-
 .logo {
-  flex: 1; /* Giver elementet mulighed for at vokse og fylde ledig plads */
-  display: flex; /* Bruger flexbox til at centrere logoet */
-  justify-content: center; /* Centrerer logoet horisontalt */
+  display: flex; /* Bruger flexbox til layout af logo */
+  align-items: center; /* Centrerer logoet vertikalt */
 }
 
 .logo img {
@@ -98,12 +92,12 @@ body {
 
 .mobile-nav a {
   text-decoration: none; /* Fjerner standard understregning fra links */
-  color:var(--secondary); /* Sætter tekstfarven til hvid */
+  color: var(--secondary); /* Sætter tekstfarven til hvid */
   font-size: 1.5rem; /* Øger skriftstørrelsen */
 }
 
 /* Responsive design for mobile devices */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
   .nav {
       display: none; /* Skjuler den almindelige navigation på små skærme */
   }
@@ -111,46 +105,43 @@ body {
   .burger {
       display: block; /* Viser burger-ikonet på små skærme */
   }
-
-  .logo {
-      position: absolute; /* Placerer logoet absolut for at centrere det */
-      left: 50%; /* Flytter logoet til midten af vinduet */
-      transform: translateX(-50%); /* Justerer logoet for at sikre, at det er helt centreret */
-  }
-
-  .burger.toggle .line1 {
-      transform: rotate(-45deg) translate(-5px, 6px); /* Roterer og flytter den første linje i burger-ikonet */
-  }
-
-  .burger.toggle .line2 {
-      opacity: 0; /* Gør den midterste linje usynlig */
-  }
-
-  .burger.toggle .line3 {
-      transform: rotate(45deg) translate(-5px, -6px); /* Roterer og flytter den tredje linje i burger-ikonet */
-  }
 }
 
-/* Responsive design for small tablets and iPad Mini */
+/* Responsive styles for opening hours */
+.nyaabning {
+  display: flex; /* Bruger flexbox til at layout af åbningstiderne */
+  flex-wrap: wrap; /* Tillader at listeelementer brydes til flere linjer */
+  justify-content: center; /* Centrerer listeelementerne */
+  padding: 10px; /* Tilføjer padding omkring hele listen */
+  background-color: var(--primary); /* Sætter baggrundsfarven */
+  list-style: none; /* Fjerner standard punkttegn */
+  margin: 0; /* Fjerner standard margin */
+}
+
+.li_nyaabning {
+  margin: 10px; /* Tilføjer margin omkring hvert listeelement */
+  flex: 1 1 120px; /* Justerer fleksibiliteten og minimum bredden */
+  color: #000; /* Sætter tekstfarven til sort */
+  text-align: center; /* Centrerer teksten */
+}
+
+/* Breakpoint for smaller screens */
 @media screen and (max-width: 768px) {
-  /* Custom styles for small tablets and iPad Mini */
-  .nav-links li {
-      margin-left: 15px; /* Reducerer marginen mellem navigationselementer */
-  }
-
-  .logo img {
-      max-width: 80px; /* Reducerer logoets størrelse */
+  .li_nyaabning {
+      flex: 1 1 80px; /* Justerer fleksibiliteten og minimum bredden på mindre skærme */
   }
 }
 
-/* Responsive design for medium-sized tablets and iPads */
-@media screen and (max-width: 1024px) {
-  /* Custom styles for medium-sized tablets and iPads */
-  .nav-links li {
-      margin-left: 10px; /* Yderligere reducering af marginen mellem navigationselementer */
+@media screen and (max-width: 480px) {
+  .li_nyaabning {
+      flex: 1 1 60px; /* Justerer fleksibiliteten og minimum bredden på endnu mindre skærme */
   }
 
-  .logo img {
-      max-width: 90px; /* Sætter logoets størrelse til 90px */
+  .li_nyaabning:last-child {
+      flex: 1 1 100%; /* Sørger for, at søndag rykker ned på en ny linje på små skærme */
+  }
+
+  .nyaabning {
+      font-size: 0.8rem; /* Mindre skriftstørrelse på meget små skærme */
   }
 }
