@@ -49,15 +49,15 @@ body {
 .burger {
   display: none; /* Skjuler burger-ikonet som standard */
   cursor: pointer; /* Ændrer musemarkøren til en pointer */
-  position: absolute; /* Placerer burger-ikonet absolut i forhold til containeren */
-  right: 20px; /* Placerer burger-ikonet 20px fra højre kant */
-  top: 15px; /* Placerer burger-ikonet 15px fra toppen */
+  position: static; /* Placerer burger-ikonet absolut i forhold til containeren */
 }
 
 .burger div {
   width: 25px; /* Sætter bredden på hver linje i burger-ikonet til 25px */
   height: 3px; /* Sætter højden på hver linje i burger-ikonet til 3px */
-  background-color: var(--secondary); /* Sætter baggrundsfarven på linjerne til hvid */
+  background-color: var(
+    --secondary
+  ); /* Sætter baggrundsfarven på linjerne til hvid */
   margin: 5px; /* Tilføjer margin omkring hver linje */
   transition: all 0.3s ease; /* Tilføjer en glidende overgangseffekt på 0.3 sekunder */
 }
@@ -99,11 +99,11 @@ body {
 /* Responsive design for mobile devices */
 @media screen and (max-width: 650px) {
   .nav {
-      display: none; /* Skjuler den almindelige navigation på små skærme */
+    display: none; /* Skjuler den almindelige navigation på små skærme */
   }
 
   .burger {
-      display: block; /* Viser burger-ikonet på små skærme */
+    display: block; /* Viser burger-ikonet på små skærme */
   }
 }
 
@@ -128,20 +128,20 @@ body {
 /* Breakpoint for smaller screens */
 @media screen and (max-width: 768px) {
   .li_nyaabning {
-      flex: 1 1 80px; /* Justerer fleksibiliteten og minimum bredden på mindre skærme */
+    flex: 1 1 80px; /* Justerer fleksibiliteten og minimum bredden på mindre skærme */
   }
 }
 
 @media screen and (max-width: 480px) {
   .li_nyaabning {
-      flex: 1 1 60px; /* Justerer fleksibiliteten og minimum bredden på endnu mindre skærme */
+    flex: 1 1 60px; /* Justerer fleksibiliteten og minimum bredden på endnu mindre skærme */
   }
 
   .li_nyaabning:last-child {
-      flex: 1 1 100%; /* Sørger for, at søndag rykker ned på en ny linje på små skærme */
+    flex: 1 1 100%; /* Sørger for, at søndag rykker ned på en ny linje på små skærme */
   }
 
   .nyaabning {
-      font-size: 0.8rem; /* Mindre skriftstørrelse på meget små skærme */
+    font-size: 0.8rem; /* Mindre skriftstørrelse på meget små skærme */
   }
 }

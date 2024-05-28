@@ -23,7 +23,7 @@ body {
 
 header {
   width: 100%;
-  padding: 0 10% 0 10%;
+  padding: 40px 10% 40px 10%;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -33,6 +33,14 @@ header {
   text-align: center;
   background-color: var(--secondary);
   color: var(--primary);
+}
+.header-container {
+  display: flex;
+  padding: 40px 10%;
+}
+
+.logo img {
+  width: 70px;
 }
 
 main {
@@ -152,7 +160,7 @@ p1 {
 }
 
 .footer-column ul li a {
-  color: #fff;
+  color: #cdb535;
   text-decoration: none;
 }
 
@@ -161,7 +169,7 @@ p1 {
 }
 
 /* Mobile first styles */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .menu-item {
     padding: 10px 0;
     border-bottom: 0.5px solid var(--primary);
