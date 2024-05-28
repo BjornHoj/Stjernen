@@ -1,0 +1,16 @@
+.nyaabning {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.li_nyaabning {
+  font-size: xx-large;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
