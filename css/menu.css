@@ -1,8 +1,8 @@
 /* GENERAL STYLE */
 :root {
-  --base: var(#cdb535);
-  --primary: var(#000000);
-  --secondary: var(#fade41);
+  /* --base */
+  --primary: var(#cdb535);
+  --secondary: var(#000000);
 }
 
 * {
@@ -17,8 +17,8 @@ body {
   font-family: "BasisGrotesque", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000000;
-  color: #cdb535;
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 header {
@@ -31,8 +31,8 @@ header {
   padding: 0;
 
   text-align: center;
-  background-color: #000000;
-  color: #cdb535;
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 main {
@@ -60,6 +60,12 @@ p {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+p1 {
+  font-family: "BasisGrotesque", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .category {
@@ -91,16 +97,74 @@ p {
 }
 
 /* FOOTER */
-.grid_1-1-1-1 {
+.footer {
+  background-color: #cdb535;
+  color: #000000;
+  padding: 60px 0;
+  background-image: url("../assets/img/logo/PNG/STJRNE_LOGO_2.png"); /* Change to your image path */
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-position-x: center;
+  background-position-y: 220%;
+  background-size: 140%;
+  overflow: hidden;
+}
+.f-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  gap: 30px;
+  /* max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; */
+  width: 100%;
+  padding: 40px 10% 40px 10%;
+  margin: 0 auto;
+}
+.cr {
+  /* max-width: 1200px; */
+  margin: 0px auto;
+  padding: 0 20px;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  padding: 40px 10% 40px 10%;
+  margin: 0 auto;
+}
+.hr {
+  border: 1px solid #000000;
+}
+
+.footer-column {
+  text-align: center;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Mobile first styles */
 @media (max-width: 600px) {
   .menu-item {
     padding: 10px 0;
-    border-bottom: 0.5px solid #cdb535;
+    border-bottom: 0.5px solid var(--primary);
   }
 
   .item-header {
@@ -114,10 +178,10 @@ p {
 }
 
 /* Desktop styles */
-@media (min-width: 601px) {
+@media (min-width: 768px) {
   .menu-item {
     padding: 10px 0;
-    border-bottom: 0.5px solid #cdb535;
+    border-bottom: 0.5px solid var(--primary);
   }
 
   .item-header {
@@ -126,5 +190,28 @@ p {
 
   .item-price {
     align-self: center;
+  }
+  .f-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer {
+    background-color: #cdb535;
+    color: #000000;
+    padding: 60px 0;
+    background-image: url("../assets/img/logo/PNG/STJRNE_LOGO_2.png"); /* Change to your image path */
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-position-x: 180%;
+    background-position-y: 0%;
+    background-size: 70%;
+    overflow: hidden;
+  }
+
+  .footer-column {
+    text-align: left;
+  }
+  .cr {
+    text-align: left;
   }
 }
