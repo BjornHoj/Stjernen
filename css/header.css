@@ -8,8 +8,8 @@ body {
   justify-content: space-between; /* Placerer elementer med lige meget plads mellem dem */
   align-items: center; /* Centrerer elementer vertikalt */
   padding: 0 20px; /* Tilføjer 20px padding på venstre og højre side */
-  background-color: #333; /* Sætter baggrundsfarven til mørkegrå */
-  color: #fff; /* Sætter tekstfarven til hvid */
+  background-color: var(--primary); /* Sætter baggrundsfarven til mørkegrå */
+  color: var(--secondary); /* Sætter tekstfarven til hvid */
   height: 80px; /* Sætter headerens højde til 80px */
   position: relative; /* Gør det muligt at absolut positionere child-elementer */
 }
@@ -48,7 +48,7 @@ body {
 
 .nav-links a {
   text-decoration: none; /* Fjerner standard understregning fra links */
-  color: #fff; /* Sætter tekstfarven til hvid */
+  color: var(--secondary); /* Sætter tekstfarven til hvid */
   font-weight: bold; /* Gør teksten fed */
 }
 
@@ -63,7 +63,7 @@ body {
 .burger div {
   width: 25px; /* Sætter bredden på hver linje i burger-ikonet til 25px */
   height: 3px; /* Sætter højden på hver linje i burger-ikonet til 3px */
-  background-color: #fff; /* Sætter baggrundsfarven på linjerne til hvid */
+  background-color: var(--secondary); /* Sætter baggrundsfarven på linjerne til hvid */
   margin: 5px; /* Tilføjer margin omkring hver linje */
   transition: all 0.3s ease; /* Tilføjer en glidende overgangseffekt på 0.3 sekunder */
 }
@@ -73,7 +73,7 @@ body {
   top: 80px; /* Placerer navigationen lige under headeren */
   left: 0; /* Placerer navigationen ved venstre kant */
   width: 100%; /* Gør navigationen lige så bred som vinduet */
-  background-color: #333; /* Sætter baggrundsfarven til mørkegrå */
+  background-color: var(--primary); /* Sætter baggrundsfarven til mørkegrå */
   z-index: 1; /* Sørger for, at navigationen ligger øverst */
   opacity: 0; /* Gør navigationen usynlig som standard */
   visibility: hidden; /* Skjuler navigationen fra layoutet som standard */
@@ -98,7 +98,7 @@ body {
 
 .mobile-nav a {
   text-decoration: none; /* Fjerner standard understregning fra links */
-  color: #fff; /* Sætter tekstfarven til hvid */
+  color:var(--secondary); /* Sætter tekstfarven til hvid */
   font-size: 1.5rem; /* Øger skriftstørrelsen */
 }
 
