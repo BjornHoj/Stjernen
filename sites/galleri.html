@@ -3,36 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Udforsk vores smukke galleri med fantastiske billeder, der fanger øjeblikke af vores unike bar."
+    />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/mutual_styles.css" />
     <link rel="icon" href="../favicon_io-2/favicon.ico" />
-    <link rel="stylesheet" href="../css/galleri.css">
+    <link rel="stylesheet" href="../css/galleri.css" />
     <title>Galleri</title>
   </head>
-  
-
 
   <body>
     <header>
-      <div class="headercontainer">
-        <Div class="Aabningstider">
-          <p>Åbningstider: <br>Man-Tor: 15-24 <br> Fre-Lør: 14-02 <br>Søn: Lukket </p>
-        </Div>
-      <div class="logo"><strong><h3>Stjernen BAR</h3></strong>
+      <div class="header-container">
+        <div class="opening-hours">
+          Man-Tor: 15-02 <br />
+          Fre-Lør: 15-02 <br />
+          Søn: Lukket
+        </div>
+        <div class="logo">
+          <img src="logo.svg" alt="Logo" />
+        </div>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="./galleri.html">Galleri</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./omos.html">Om Os</a></li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </div>
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <nav>
-        <ul class="menu">
-          <li><a href="">Menu Kort</a></li>
-          <li><a href="">OM OS</a></li>
-          <li><a href="">Galleri</a></li>
-        </ul>
-      </nav>
-    </div>
     </header>
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="./galleri.html" aria-label="Galleri">Galleri</a></li>
+        <li><a href="./menu.html" aria-label="Menu kort">Menu</a></li>
+        <li><a href="./omos.html" aria-label="Om os">Om Os</a></li>
+      </ul>
+    </div>
     <main>
       <section class="container-2">
         <div>
@@ -59,28 +72,27 @@
             <img id="slide-17" src="../imgs/img17.JPG" alt="bts17" />
           </div>
           <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-            <a href="#slide-5"></a>
-            <a href="#slide-6"></a>
-            <a href="#slide-7"></a>
-            <a href="#slide-8"></a>
-            <a href="#slide-9"></a>
-            <a href="#slide-10"></a>
-            <a href="#slide-11"></a>
-            <a href="#slide-12"></a>
-            <a href="#slide-13"></a>
-            <a href="#slide-14"></a>
-            <a href="#slide-15"></a>
-            <a href="#slide-16"></a>
-            <a href="#slide-17"></a>
+            <a href="#slide-1" aria-label="bts1"></a>
+            <a href="#slide-2" aria-label="bts2"></a>
+            <a href="#slide-3" aria-label="bts3"></a>
+            <a href="#slide-4" aria-label="bts4"></a>
+            <a href="#slide-5" aria-label="bts5"></a>
+            <a href="#slide-6" aria-label="bts6"></a>
+            <a href="#slide-7" aria-label="bts7"></a>
+            <a href="#slide-8" aria-label="bts8"></a>
+            <a href="#slide-9" aria-label="bts9"></a>
+            <a href="#slide-10" aria-label="bts10"></a>
+            <a href="#slide-11" aria-label="bts11"></a>
+            <a href="#slide-12" aria-label="bts12"></a>
+            <a href="#slide-13" aria-label="bts13"></a>
+            <a href="#slide-14" aria-label="bts14"></a>
+            <a href="#slide-15" aria-label="bts15"></a>
+            <a href="#slide-16" aria-label="bts16"></a>
+            <a href="#slide-17" aria-label="bts17"></a>
           </div>
         </div>
       </section>
-     
     </main>
-   
+    <script src="../java/javaheader.js"></script>
   </body>
 </html>

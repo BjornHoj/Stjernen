@@ -5,39 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="./css/mutual_styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
     <link rel="icon" href="../favicon_io-2/favicon.ico" />
     <title>Forside</title>
   </head>
   <body>
     <header>
-      <div class="headercontainer">
-        <div class="Aabningstider">
-          <p>
-            Åbningstider: <br />Man-Tor: 15-24 <br />
-            Fre-Lør: 14-02 <br />Søn: Lukket
-          </p>
-        </div>
+      <div class="header-container">
         <div class="logo">
-          <a href="../index.html"><strong>STJERNEN</strong></a>
+          <img src="logo.svg" alt="Logo" />
         </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-          <div class="menu-button"></div>
-        </label>
-        <nav>
-          <ul class="menu">
-            <li><a href="sites/menu.html">Menu</a></li>
-            <li><a href="sites/omos.html">Om os</a></li>
-            <li><a href="sites/galleri.html">Galleri</a></li>
+        <div class="opening-hours">
+          Man-Tor: 15-02 <br />
+          Fre-Lør: 15-02 <br />
+          Søn: Lukket
+        </div>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="./sites/galleri.html">Galleri</a></li>
+            <li><a href="./sites/menu.html">Menu</a></li>
+            <li><a href="./sites/omos.html">Om Os</a></li>
           </ul>
         </nav>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </div>
     </header>
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="./sites/galleri.html">Galleri</a></li>
+        <li><a href="./sites/menu.html">Menu</a></li>
+        <li><a href="./sites/omos.html">Om Os</a></li>
+      </ul>
+    </div>
+
     <img
       class="stjerne_logo"
-      src="assets/video/SVG/Artboard 1.svg"
+      src="assets/video/SVG/Artboard1.svg"
       alt="stjerne_logo"
     />
+    <ul class="nyaabning">
+      <li class="li_nyaabning">
+        <div><strong>Mandag</strong></div>
+        <div><strong>15-24</strong></div>
+      </li>
+      <li class="li_nyaabning">
+        <div><strong>Tirsdag</strong></div>
+        <div><strong>15-24</strong></div>
+      </li>
+      <li class="li_nyaabning">
+        <div><strong>Onsdag</strong></div>
+        <div><strong>15-24</strong></div>
+      </li>
+      <li class="li_nyaabning">
+        <div><strong>Torsdag</strong></div>
+        <div><strong>15-24</strong></div>
+      </li>
+      <li class="li_nyaabning">
+        <div><strong>Fredag</strong></div>
+        <div><strong>14-02</strong></div>
+      </li>
+      <li class="li_nyaabning">
+        <div><strong>Lørdag</strong></div>
+        <div><strong>14-02</strong></div>
+      </li>
+      <li class="li_nyaabning">
+        <div><strong>Søndag</strong></div>
+        <div><strong>Lukket</strong></div>
+      </li>
+    </ul>
+    <script src="./java/javaheader.js"></script>
   </body>
 </html>
