@@ -3,36 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Udforsk vores smukke galleri med fantastiske billeder, der fanger øjeblikke af vores unike bar.">
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/mutual_styles.css" />
     <link rel="icon" href="../favicon_io-2/favicon.ico" />
+    <link rel="stylesheet" href="../css/galleri.css">
     <title>Galleri</title>
   </head>
+  
 
-  <header>
-    <div class="headercontainer">
-      <div class="Aabningstider">
-        <p>
-          Åbningstider: <br />Man-Tor: 15-24 <br />
-          Fre-Lør: 14-02 <br />Søn: Lukket
-        </p>
+
+  <body>
+    <header>
+      <div class="header-container">
+          <div class="opening-hours"> Man-Tor: 15-02 <br> Fre-Lør: 15-02 <br> Søn: Lukket
+          </div>
+          <div class="logo">
+              <img src="logo.svg" alt="Logo">
+          </div>
+          <nav class="nav">
+              <ul class="nav-links">
+                  <li><a href="./menu.html">Menu Kort</a></li>
+                  <li><a href="./omos.html">Om Os</a></li>
+                  <li><a href="./kontaktos.html">Kontakt Os</a></li>
+                  <li><a href="./galleri.html">Galleri</a></li>
+              </ul>
+          </nav>
+          <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
       </div>
-      <div class="logo">
-        <a href="../index.html"><strong>STJERNEN</strong></a>
-      </div>
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <nav>
-        <ul class="menu">
-          <li><a href="../sites/menukort.html">Menu Kort</a></li>
-          <li><a href="../sites/omos.html">Om os</a></li>
-          <li><a href="../sites/galleri.html">Galleri</a></li>
-        </ul>
-      </nav>
-    </div>
   </header>
-
-  <body></body>
+  <div class="mobile-nav">
+      <ul>
+        <li><a href="./menu.html" aria-label="Menu kort">Menu Kort</a></li>
+        <li><a href="./omos.html" aria-label="Om os">Om Os</a></li>
+        <li><a href="./kontaktos.html" aria-label="Kontakt Os">Kontakt Os</a></li>
+        <li><a href="./galleri.html" aria-label="Galleri">Galleri</a></li>
+    </ul>
+      </ul>
+  </div>
+    <main>
+      <section class="container-2">
+        <div>
+          <h2 id="bts-h2">Galleri</h2>
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img id="slide-1" src="../imgs/img1.JPG" alt="bts1" />
+            <img id="slide-2" src="../imgs/img2.JPG" alt="bts2" />
+            <img id="slide-3" src="../imgs/img3.JPG" alt="bts3" />
+            <img id="slide-4" src="../imgs/img4.JPG" alt="bts4" />
+            <img id="slide-5" src="../imgs/img5.JPG" alt="bts5" />
+            <img id="slide-6" src="../imgs/img6.JPG" alt="bts6" />
+            <img id="slide-7" src="../imgs/img7.JPG" alt="bts7" />
+            <img id="slide-8" src="../imgs/img8.JPG" alt="bts8" />
+            <img id="slide-9" src="../imgs/img9.JPG" alt="bts9" />
+            <img id="slide-10" src="../imgs/img10.JPG" alt="bts10" />
+            <img id="slide-11" src="../imgs/img11.JPG" alt="bts11" />
+            <img id="slide-12" src="../imgs/img12.JPG" alt="bts12" />
+            <img id="slide-13" src="../imgs/img13.JPG" alt="bts13" />
+            <img id="slide-14" src="../imgs/img14.JPG" alt="bts14" />
+            <img id="slide-15" src="../imgs/img15.JPG" alt="bts15" />
+            <img id="slide-16" src="../imgs/img16.JPG" alt="bts16" />
+            <img id="slide-17" src="../imgs/img17.JPG" alt="bts17" />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1" aria-label="bts1"></a>
+            <a href="#slide-2" aria-label="bts2"></a>
+            <a href="#slide-3" aria-label="bts3"></a>
+            <a href="#slide-4" aria-label="bts4"></a>
+            <a href="#slide-5" aria-label="bts5"></a>
+            <a href="#slide-6" aria-label="bts6"></a>
+            <a href="#slide-7" aria-label="bts7"></a>
+            <a href="#slide-8" aria-label="bts8"></a>
+            <a href="#slide-9" aria-label="bts9"></a>
+            <a href="#slide-10" aria-label="bts10"></a>
+            <a href="#slide-11" aria-label="bts11"></a>
+            <a href="#slide-12" aria-label="bts12"></a>
+            <a href="#slide-13" aria-label="bts13"></a>
+            <a href="#slide-14" aria-label="bts14"></a>
+            <a href="#slide-15" aria-label="bts15"></a>
+            <a href="#slide-16" aria-label="bts16"></a>
+            <a href="#slide-17"aria-label="bts17"></a>
+          </div>
+        </div>
+      </section>
+     
+    </main>
+    <script src="../java/javaheader.js"></script>
+  </body>
 </html>

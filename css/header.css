@@ -1,136 +1,156 @@
-@font-face {
-    font-family: abel;
-    src: url(Abel-Regular.woff);
-  }
-  html,
-  body {
-    margin: 0;
-    height: 100%;
-  }
-  * {
-    font-family: abel;
-    box-sizing: border-box;
-  }
-  .menu a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  .headercontainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #cdb535;
-    color: #030303;
-    height: 80px;
-
-  }
-  
-.Aabningstider{
-  padding-left: 1em;
+body {
+  margin: 0; /* Fjerner standard margin fra body */
+  font-family: Arial, sans-serif; /* Sætter standard skrifttype til Arial */
 }
-  .menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+.header-container {
+  display: flex; /* Bruger flexbox til layout */
+  justify-content: space-between; /* Placerer elementer med lige meget plads mellem dem */
+  align-items: center; /* Centrerer elementer vertikalt */
+  padding: 0 20px; /* Tilføjer 20px padding på venstre og højre side */
+  background-color: var(--primary); /* Sætter baggrundsfarven til mørkegrå */
+  color: var(--secondary); /* Sætter tekstfarven til hvid */
+  height: 80px; /* Sætter headerens højde til 80px */
+  position: relative; /* Gør det muligt at absolut positionere child-elementer */
+}
+
+.opening-hours {
+  flex: 1; /* Giver elementet mulighed for at vokse og fylde ledig plads */
+  white-space: nowrap; /* Forhindrer linjeskift inden for elementet */
+}
+
+.logo {
+  flex: 1; /* Giver elementet mulighed for at vokse og fylde ledig plads */
+  display: flex; /* Bruger flexbox til at centrere logoet */
+  justify-content: center; /* Centrerer logoet horisontalt */
+}
+
+.logo img {
+  max-width: 100px; /* Sætter maksimal bredde på logoet til 100px */
+  height: auto; /* Bevarer billedets oprindelige højde-breddeforhold */
+}
+
+.nav {
+  flex: 1; /* Giver elementet mulighed for at vokse og fylde ledig plads */
+  text-align: right; /* Justerer teksten til højre */
+}
+
+.nav-links {
+  list-style: none; /* Fjerner standard punkttegn fra listen */
+  padding: 0; /* Fjerner standard padding */
+  margin: 0; /* Fjerner standard margin */
+}
+
+.nav-links li {
+  display: inline; /* Viser listeelementer på en linje */
+  margin-left: 20px; /* Tilføjer margin til venstre for at adskille elementerne */
+}
+
+.nav-links a {
+  text-decoration: none; /* Fjerner standard understregning fra links */
+  color: var(--secondary); /* Sætter tekstfarven til hvid */
+  font-weight: bold; /* Gør teksten fed */
+}
+
+.burger {
+  display: none; /* Skjuler burger-ikonet som standard */
+  cursor: pointer; /* Ændrer musemarkøren til en pointer */
+  position: absolute; /* Placerer burger-ikonet absolut i forhold til containeren */
+  right: 20px; /* Placerer burger-ikonet 20px fra højre kant */
+  top: 15px; /* Placerer burger-ikonet 15px fra toppen */
+}
+
+.burger div {
+  width: 25px; /* Sætter bredden på hver linje i burger-ikonet til 25px */
+  height: 3px; /* Sætter højden på hver linje i burger-ikonet til 3px */
+  background-color: var(--secondary); /* Sætter baggrundsfarven på linjerne til hvid */
+  margin: 5px; /* Tilføjer margin omkring hver linje */
+  transition: all 0.3s ease; /* Tilføjer en glidende overgangseffekt på 0.3 sekunder */
+}
+
+.mobile-nav {
+  position: fixed; /* Placerer navigationen fast i forhold til vinduet */
+  top: 80px; /* Placerer navigationen lige under headeren */
+  left: 0; /* Placerer navigationen ved venstre kant */
+  width: 100%; /* Gør navigationen lige så bred som vinduet */
+  background-color: var(--primary); /* Sætter baggrundsfarven til mørkegrå */
+  z-index: 1; /* Sørger for, at navigationen ligger øverst */
+  opacity: 0; /* Gør navigationen usynlig som standard */
+  visibility: hidden; /* Skjuler navigationen fra layoutet som standard */
+  transition: opacity 1s ease, visibility 1s ease; /* Tilføjer en glidende overgangseffekt for synlighed og gennemsigtighed */
+}
+
+.mobile-nav.active {
+  opacity: 1; /* Gør navigationen synlig */
+  visibility: visible; /* Gør navigationen synlig i layoutet */
+}
+
+.mobile-nav ul {
+  list-style: none; /* Fjerner standard punkttegn fra listen */
+  padding: 0; /* Fjerner standard padding */
+  margin: 0; /* Fjerner standard margin */
+  text-align: center; /* Centrerer listeelementerne */
+}
+
+.mobile-nav li {
+  padding: 10px 0; /* Tilføjer padding over og under hvert listeelement */
+}
+
+.mobile-nav a {
+  text-decoration: none; /* Fjerner standard understregning fra links */
+  color:var(--secondary); /* Sætter tekstfarven til hvid */
+  font-size: 1.5rem; /* Øger skriftstørrelsen */
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 650px) {
+  .nav {
+      display: none; /* Skjuler den almindelige navigation på små skærme */
   }
-  
-  .menu > li {
-    margin: 0 1rem;
-    overflow: hidden;
+
+  .burger {
+      display: block; /* Viser burger-ikonet på små skærme */
   }
-  
-  .menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  .logo {
+      position: absolute; /* Placerer logoet absolut for at centrere det */
+      left: 50%; /* Flytter logoet til midten af vinduet */
+      transform: translateX(-50%); /* Justerer logoet for at sikre, at det er helt centreret */
   }
-  
-  #menu-toggle {
-    display: none;
+
+  .burger.toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px); /* Roterer og flytter den første linje i burger-ikonet */
   }
-  
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
-    display: block;
-    background-color: #000000;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
+
+  .burger.toggle .line2 {
+      opacity: 0; /* Gør den midterste linje usynlig */
   }
-  
-  .menu-button::before {
-    content: "";
-    margin-top: -8px;
+
+  .burger.toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px); /* Roterer og flytter den tredje linje i burger-ikonet */
   }
-  
-  .menu-button::after {
-    content: "";
-    margin-top: 8px;
+}
+
+/* Responsive design for small tablets and iPad Mini */
+@media screen and (max-width: 768px) {
+  /* Custom styles for small tablets and iPad Mini */
+  .nav-links li {
+      margin-left: 15px; /* Reducerer marginen mellem navigationselementer */
   }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
+
+  .logo img {
+      max-width: 80px; /* Reducerer logoets størrelse */
   }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
+}
+
+/* Responsive design for medium-sized tablets and iPads */
+@media screen and (max-width: 1024px) {
+  /* Custom styles for medium-sized tablets and iPads */
+  .nav-links li {
+      margin-left: 10px; /* Yderligere reducering af marginen mellem navigationselementer */
   }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
+
+  .logo img {
+      max-width: 90px; /* Sætter logoets størrelse til 90px */
   }
-  
-  @media (max-width: 650px) {
-    .menu-button-container {
-      display: flex;
-    }
-    nav {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
-      width: 100%;
-    }
-    .menu {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    #menu-toggle ~ nav .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked ~ nav .menu li {
-   
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      background-color: #d7bf4c;
-    }
-    .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
-    }
-  }
-  
+}

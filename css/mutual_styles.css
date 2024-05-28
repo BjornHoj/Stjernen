@@ -1,5 +1,6 @@
 html {
   --primary: rgb(205, 181, 53);
+  --secondary: rgb(0, 0, 0);
 }
 
 body {
@@ -9,4 +10,17 @@ body {
 
 .stjerne_logo {
   max-width: 100%;
+
 }
+
+input[type="submit"] {
+ 
+  width: 10%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #fdfdfd;
+  border-color: #3b3b4f;
+  min-width: 100px;
+}
+
