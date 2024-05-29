@@ -173,6 +173,34 @@ p1 {
   text-decoration: underline;
 }
 
+/* Social ikons */
+.social_icons {
+  display: flex;
+  justify-content: center;
+  size: 30px;
+}
+.social_icons a {
+  text-decoration: none;
+  padding: 8px;
+  background-color: #cdb535;
+  margin: 0 15px 0 15px;
+  border-radius: 50%;
+}
+.social_icons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.social_icons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.social_icons a:hover i {
+  color: #cdb535;
+  transition: 0.5s;
+}
+
 /* Desktop styles */
 @media (min-width: 768px) {
   .menu-item {
@@ -213,5 +241,9 @@ p1 {
   .hr {
     width: 70%;
     margin: 0;
+  }
+  .social_icons {
+    display: flex;
+    justify-content: left;
   }
 }
