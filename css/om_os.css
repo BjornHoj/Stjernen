@@ -3,21 +3,27 @@ body {
 }
 .old_stjernen {
   max-width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .insta {
   max-width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .stjerneinfo_1 {
-  padding-right: 1em;
+  padding-right: 10%;
+  padding-left: 10%;
   font-family: Arial, Helvetica, sans-serif;
   color: #111;
   line-height: 24px;
   font-size: 16px;
 }
 .stjerneinfo_2 {
-  padding-right: 1em;
+  padding-right: 10%;
+  padding-left: 10%;
   font-family: Arial, Helvetica, sans-serif;
   color: #111;
   line-height: 24px;
