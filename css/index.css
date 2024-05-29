@@ -6,6 +6,7 @@
   flex-direction: row;
   align-items: flex-start;
   font-size: medium;
+  border-radius: 5%;
 }
 
 .li_nyaabning {
