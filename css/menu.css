@@ -39,13 +39,19 @@ header {
 }
 
 .logo img {
-  width: 70px;
+  width: 60px;
 }
 
 main {
   display: flexbox;
   justify-content: center;
   padding: 40px 10% 80px 10%;
+}
+bar-img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 .container {
