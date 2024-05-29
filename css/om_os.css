@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 .old_stjernen {
   max-width: 100%;
@@ -30,6 +31,10 @@ body {
   font-size: 16px;
 }
 @media screen and (min-width: 1024px) {
+  body {
+    text-align: center;
+  }
+
   .stjerneinfo_1 {
     padding-right: 45em;
     padding-left: 1%;
