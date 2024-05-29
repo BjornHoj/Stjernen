@@ -145,3 +145,22 @@ body {
     font-size: 0.8rem; /* Mindre skriftstørrelse på meget små skærme */
   }
 }
+
+a{
+
+  text-decoration: none;
+
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 60px;
+}
