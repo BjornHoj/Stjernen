@@ -45,7 +45,7 @@ header {
 main {
   display: flexbox;
   justify-content: center;
-  padding: 40px 10% 80px 10%;
+  padding: 100px 10% 120px 10%;
 }
 
 .container {
