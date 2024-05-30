@@ -1,7 +1,6 @@
 .nyaabning {
   list-style: none;
   display: flex;
-  padding: 5%;
   margin: 0;
   flex-direction: row;
   align-items: flex-start;
@@ -23,8 +22,8 @@
 @media (min-width: 786px) {
   .nyaabning {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
-    font-size: x-large;
+
   }
 }
