@@ -27,6 +27,7 @@ input[type="submit"] {
 }
 
 .wrapper-main{
+  display: grid;
   max-height: 75vh;
   margin: auto;
   align-items: center;
