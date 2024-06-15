@@ -7,7 +7,7 @@ body {
   display: flex; /* Bruger flexbox til layout */
   justify-content: space-between; /* Placerer elementer med lige meget plads mellem dem */
   align-items: center; /* Centrerer elementer vertikalt */
- padding: 0px 10% 0px 10%; /* Tilføjer 20px padding på venstre og højre side */
+  padding: 0px 10% 0px 10%; /* Tilføjer 20px padding på venstre og højre side */
   background-color: var(--primary); /* Sætter baggrundsfarven til mørkegrå */
   color: var(--secondary); /* Sætter tekstfarven til hvid */
   height: 80px; /* Sætter headerens højde til 80px */
@@ -146,10 +146,8 @@ body {
   }
 }
 
-a{
-
+a {
   text-decoration: none;
-
 }
 
 a:visited {
